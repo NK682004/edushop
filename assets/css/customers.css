@@ -1,0 +1,135 @@
+/* ===== SEARCH CARD ===== */
+.search-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.search-form {
+    display: flex;
+    gap: 12px;
+}
+
+.search-input-group {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.search-input-group input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.search-input-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* ===== CUSTOMER STATS ===== */
+.customer-stats {
+    background: white;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* ===== ADDRESS CELL ===== */
+.address-cell {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ===== REVENUE ===== */
+.revenue {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-badge.inactive {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.btn-orders {
+    background: #fff3e0;
+}
+
+.btn-orders:hover {
+    background: #ffe0b2;
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .search-input-group {
+        flex-direction: column;
+    }
+    
+    .customer-stats {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .data-table {
+        font-size: 0.85rem;
+    }
+    
+    .address-cell {
+        max-width: 150px;
+    }
+}
